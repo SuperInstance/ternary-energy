@@ -150,6 +150,14 @@ Entropy production measures how far a state distribution is from maximum entropy
 | `ternary-network` | Network flow can be analyzed as energy transfer |
 | `ternary-quantum` | Quantum systems have their own energy level structure |
 
+## Known Limitations
+
+- **Physics terminology is analogical, not rigorous.** Terms like "Carnot efficiency," "specific heat," "Helmholtz free energy," and "entropy production" describe simplified computations on ternary distributions, not physically rigorous thermodynamic quantities.
+- **`entropy_production` computes entropy deficit** (distance from uniform), not a production rate in the thermodynamic sense (dS/dt).
+- **`is_equilibrium` checks distribution uniformity**, not thermodynamic equilibrium in any physical sense.
+- **Energy quantization thresholds (±0.5) are hardcoded** and not configurable.
+- **`TernaryEngine::cycle` has inconsistent quantization.** For large heat inputs the quantization effectively does nothing (work = max_work), while for small inputs it collapses to 0 or 1.0.
+
 ## License
 
 MIT
