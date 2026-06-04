@@ -1,0 +1,6 @@
+[package]
+name = "ternary-energy"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Energy and thermodynamic models for ternary systems"
