@@ -158,6 +158,15 @@ Entropy production measures how far a state distribution is from maximum entropy
 - **Energy quantization thresholds (±0.5) are hardcoded** and not configurable.
 - **`TernaryEngine::cycle` has inconsistent quantization.** For large heat inputs the quantization effectively does nothing (work = max_work), while for small inputs it collapses to 0 or 1.0.
 
+## See Also
+
+- **ternary-thermodynamics** — Statistical mechanics analogs for ternary systems
+- **ternary-entropy** — Entropy and information theory for ternary distributions
+- **ternary-irradiate** — Radiation and energy propagation models
+- **ternary-fire** — Fire spread and combustion modeling with ternary states
+- **ternary-ising** — Ising model simulations with ternary spin states
+- **ternary-chaos** — Chaos and nonlinear dynamics for ternary systems
+
 ## License
 
 MIT
